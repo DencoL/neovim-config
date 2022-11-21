@@ -16,5 +16,6 @@ saga.init_lsp_saga({
         exec = '<CR>'
     },
     rename_action_quit = '<ESC>',
-    rename_in_select = false
+    rename_in_select = false,
+    custom_kind = require("catppuccin.groups.integrations.lsp_saga").custom_kind(),
 })

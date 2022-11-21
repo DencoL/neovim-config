@@ -5,7 +5,11 @@ require("catppuccin").setup({
         barbar = true,
         native_lsp = {
             enabled = true
-        }
+        },
+        harpoon = true,
+        cmp = true,
+        telescope = true,
+        gitsigns = true
     }
 })
 
