@@ -1,7 +1,5 @@
--- luasnip setup
 local luasnip = require "luasnip"
 
--- nvim-cmp setup
 local cmp = require "cmp"
 cmp.setup {
     snippet = {
@@ -39,8 +37,10 @@ cmp.setup {
             end
         end, { "i", "s" }),
     }),
-    sources = {
-        { name = "nvim_lsp" },
-        { name = "luasnip" }
-    },
+    sources = cmp.config.sources({
+        { name = 'nvim_lsp', priority = 3 },
+        { name = 'luasnip', priority = 2 },
+    }, {
+        { name = 'buffer', priority = 1 }
+    })
 }
