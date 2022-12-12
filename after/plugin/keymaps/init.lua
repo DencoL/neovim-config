@@ -19,3 +19,5 @@ nnoremap("<leader>W", ":wa<CR>")
 nnoremap("<C-u>", "<C-u>zz")
 nnoremap("<C-d>", "<C-d>zz")
 nnoremap("n", "nzz")
+
+nnoremap("<leader>u", ":UndotreeToggle<CR>");

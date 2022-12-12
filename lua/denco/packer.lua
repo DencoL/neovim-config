@@ -25,6 +25,7 @@ return require("packer").startup(function(use)
     use "honza/vim-snippets"
     use "RRethy/vim-illuminate"
     use({ "glepnir/lspsaga.nvim", branch = "main" })
+    use "mbbill/undotree"
 
     -- Code manipulation
     use "terrortylor/nvim-comment"
