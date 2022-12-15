@@ -12,7 +12,7 @@ set showmatch "Highlights matching parentheses"
 set ignorecase "Ignores case when searching"
 set smartcase "Unless you put some caps in your search term"
 set surround
-set clipboard+=unnamed
+set clipboard+=unnamedplus
 
 let mapleader = " "
 
@@ -47,7 +47,6 @@ nmap gta <Action>(RiderUnitTestAppendTestsAction)
 nmap gb <Action>(ToggleLineBreakpoint)
 nmap gp "0p
 nmap gP "0P
-nmap <leader>gg <Action>
 nmap <leader>dd <Action>(Debug)
 
 "nmap <S-k> <Action>(QuickJavaDoc)
