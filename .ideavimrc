@@ -1,0 +1,65 @@
+--- ideavimrc
+set relativenumber
+set number
+set visualbell
+set noerrorbells
+set scrolloff=8
+set showmode
+set highlightedyank
+set hlsearch "Highlights search terms"
+set incsearch "Highlights search terms as you type them"
+set showmatch "Highlights matching parentheses"
+set ignorecase "Ignores case when searching"
+set smartcase "Unless you put some caps in your search term"
+set surround
+set clipboard+=unnamed
+
+let mapleader = " "
+
+" Tab manipulation in Rider settings
+" <A-l>, <A-h>, <A-S-l>, <A-S-h>, <A-w>, <A-q>, <A-p>
+
+" Code navigation
+nmap <leader>n <Action>(GotoFile)
+nmap <leader>m <Action>(FileStructurePopup)
+nmap <leader>a <Action>(ShowIntentionActions)
+nmap <leader>e <Action>(ShowErrorDescription)
+
+nmap gi <Action>(ReSharperGotoImplementation)
+nmap gd <Action>(GotoDeclaration)
+nmap gu <Action>(FindUsages)
+nmap ge <Action>(GotoNextError)
+nmap gE <Action>(GotoPreviousError)
+nmap g> <Action>(MoveElementRight)
+nmap g< <Action>(MoveElementLeft)
+nmap gr <Action>(Refactorings.QuickListPopupAction)
+
+nmap <leader>fn <Action>(FindInPath)
+nmap <leader>fm <Action>(Find)
+
+nmap <leader>E <Action>(SelectInProjectView)
+
+" Activate unit test window in settings <A-u>
+
+" Code actions
+nmap gtn <Action>(RiderUnitTestNewSessionAction)
+nmap gta <Action>(RiderUnitTestAppendTestsAction)
+nmap gb <Action>(ToggleLineBreakpoint)
+nmap gp "0p
+nmap gP "0P
+nmap <leader>gg <Action>
+nmap <leader>dd <Action>(Debug)
+
+"nmap <S-k> <Action>(QuickJavaDoc)
+
+nnoremap <leader>w :w<CR>
+
+nnoremap yy <S-y>
+nnoremap <S-y> y$
+nnoremap <C-u> <C-u>zz
+nnoremap <C-d> <C-d>zz
+nnoremap n nzz
+
+nnoremap <CR> :noh<CR>
+nnoremap <C-j> <esc>:m .+1<CR>==
+nnoremap <C-k> <esc>:m .-2<CR>==
