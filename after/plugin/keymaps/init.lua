@@ -1,4 +1,5 @@
 local nnoremap = require("denco.keymap").nnoremap
+local vnoremap = require("denco.keymap").vnoremap
 
 nnoremap("<leader>e", ":Ex<CR>")
 nnoremap("<leader>ll", ":LazyGit<CR>")
@@ -19,3 +20,8 @@ nnoremap("<leader>W", ":wa<CR>")
 nnoremap("<C-u>", "<C-u>zz")
 nnoremap("<C-d>", "<C-d>zz")
 nnoremap("n", "nzz")
+
+nnoremap("<C-_>", ":CommentToggle<CR>")
+vnoremap("<C-_>", ":'<,'>CommentToggle<CR>")
+
+nnoremap("<leader>u", ":UndotreeToggle<CR>");
