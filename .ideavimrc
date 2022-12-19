@@ -34,8 +34,12 @@ nmap g> <Action>(MoveElementRight)
 nmap g< <Action>(MoveElementLeft)
 nmap gr <Action>(Refactorings.QuickListPopupAction)
 
+nmap <C-o> <Action>(Back)
+nmap <C-i> <Action>(Forward)
+
 nmap <leader>fn <Action>(FindInPath)
 nmap <leader>fm <Action>(Find)
+nmap <A-f> <Action>(ActivateFindToolWindow)
 
 nmap <leader>E <Action>(SelectInProjectView)
 
