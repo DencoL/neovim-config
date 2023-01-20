@@ -37,6 +37,8 @@ function M.setup_server(server_name, cmd, other_settings, skipIlluminate)
             if skipIlluminate == nil then
                 illuminate.on_attach(client)
             end
+            nnoremap('<leader>rn', vim.lsp.buf.rename)
+            nnoremap('<leader>a', vim.lsp.buf.code_action)
             nnoremap('<leader>cf', vim.lsp.buf.format)
         end
     }
