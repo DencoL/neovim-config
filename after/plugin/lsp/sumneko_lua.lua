@@ -1,4 +1,4 @@
-require("denco.lsp_server").setup_server("sumneko_lua", nil, {
+require("denco.lsp_server").setup_server("lua_ls", nil, {
     settings = {
         Lua = {
             runtime = {
