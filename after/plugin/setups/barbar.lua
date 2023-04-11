@@ -1,4 +1,7 @@
 require("bufferline").setup {
-    icons = "both",
+    icons = {
+        buffer_index = true,
+        filetype = { enabled = true }
+    },
     animation = false
 }
