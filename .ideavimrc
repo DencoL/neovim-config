@@ -1,3 +1,4 @@
+
 --- ideavimrc
 set relativenumber
 set number
@@ -50,11 +51,14 @@ nmap <leader>E <Action>(SelectInProjectView)
 nmap gtn <Action>(RiderUnitTestNewSessionAction)
 nmap gta <Action>(RiderUnitTestAppendTestsAction)
 nmap gb <Action>(ToggleLineBreakpoint)
-nmap gp "0p
-nmap gP "0P
+
+nmap gp "+p
+nmap gP "+P
+
 nmap <leader>dd <Action>(Debug)
 nmap <leader>ds <Action>(Stop)
-nmap <leader>dc <Action>(Resume)
+nmap <leader>dc <Action>(RunConfiguration)
+nmap <leader>dr <Action>(Run)
 
 "nmap <S-k> <Action>(QuickJavaDoc)
 
