@@ -18,7 +18,7 @@ vim.opt.autoindent = true
 vim.cmd("set noerrorbells")
 vim.cmd("set nofixendofline")
 vim.cmd("set signcolumn=yes")
-vim.cmd("set colorcolumn=120")
+vim.cmd("set colorcolumn=100")
 vim.cmd("set completeopt=menu,menuone,noselect")
 vim.cmd("set clipboard+=unnamedplus")
 vim.cmd("set noswapfile")
