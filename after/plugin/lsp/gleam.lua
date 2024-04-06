@@ -1,4 +1,4 @@
-require("denco.lsp_server").setup_server("gleam")
+require("denco.lsp_server").setup_server("gleam", { "glas", "--stdio" })
 
 vim.api.nvim_create_autocmd('FileType', {
 	pattern = 'gleam',
