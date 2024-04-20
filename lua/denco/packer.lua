@@ -19,7 +19,7 @@ return require("packer").startup(function(use)
     use "ray-x/lsp_signature.nvim"
     use "Hoffs/omnisharp-extended-lsp.nvim"
     use "romgrk/barbar.nvim"
-    use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+    use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
     use "windwp/nvim-autopairs"
     use "nvim-treesitter/nvim-treesitter-context"
     use "honza/vim-snippets"
@@ -42,11 +42,6 @@ return require("packer").startup(function(use)
     -- Git
     use "lewis6991/gitsigns.nvim"
     use "kdheepak/lazygit.nvim"
-
-    -- Debugging
-    use 'mfussenegger/nvim-dap'
-    use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
-    use "theHamsta/nvim-dap-virtual-text"
 
     -- Other
     use "lewis6991/impatient.nvim"
