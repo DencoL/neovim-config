@@ -26,6 +26,7 @@ function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
 end
 
 function M.setup_server(server_name, cmd, other_settings, skipIlluminate)
+    capabilities.textDocument.completion.completionItem.snippetSupport = false;
     local server = lspconfig[server_name]
 
     local setup = {

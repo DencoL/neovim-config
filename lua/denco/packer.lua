@@ -12,8 +12,6 @@ return require("packer").startup(function(use)
     use "neovim/nvim-lspconfig"
     use "hrsh7th/nvim-cmp"
     use "hrsh7th/cmp-nvim-lsp"
-    use "saadparwaiz1/cmp_luasnip"
-    use "L3MON4D3/LuaSnip"
     use "nvim-lua/plenary.nvim"
     use "nvim-treesitter/nvim-treesitter"
     use "ray-x/lsp_signature.nvim"
@@ -22,7 +20,6 @@ return require("packer").startup(function(use)
     use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
     use "windwp/nvim-autopairs"
     use "nvim-treesitter/nvim-treesitter-context"
-    use "honza/vim-snippets"
     use "RRethy/vim-illuminate"
     use "mbbill/undotree"
 

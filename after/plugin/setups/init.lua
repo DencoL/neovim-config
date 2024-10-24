@@ -2,7 +2,6 @@ require("gitsigns").setup()
 require("nvim_comment").setup()
 require("nvim-surround").setup()
 require("treesitter-context").setup{}
-require("luasnip.loaders.from_snipmate").load({ path = { "./snippets" } })
 require("nvim-autopairs").setup{}
 
 require "nvim-treesitter.configs".setup {
