@@ -1,7 +1,7 @@
 require("telescope").setup{}
 require("telescope").setup{
     defaults = {
-        file_ignore_patterns = { ".idea", "obj", "bin", "target", "node_modules" },
+        file_ignore_patterns = { ".idea", "obj", "bin", "target", "node_modules", ".git" },
         mappings = {
             i = {
                 ["<Esc>"] = require("telescope.actions").close
