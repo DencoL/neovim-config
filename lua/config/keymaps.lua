@@ -1,5 +1,5 @@
-local nnoremap = require("denco.keymap").nnoremap
-local vnoremap = require("denco.keymap").vnoremap
+local nnoremap = require("keymap").nnoremap
+local vnoremap = require("keymap").vnoremap
 
 nnoremap("<leader>e", ":Ex<CR>")
 nnoremap("<leader>ll", ":LazyGit<CR>")

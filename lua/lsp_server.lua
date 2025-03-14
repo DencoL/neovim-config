@@ -3,7 +3,7 @@ local M = {}
 local lspconfig = require("lspconfig")
 local lsp_signature = require("lsp_signature")
 local illuminate = require("illuminate")
-local nnoremap = require("denco.keymap").nnoremap
+local nnoremap = require("keymap").nnoremap
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
